@@ -1,0 +1,19 @@
+optparse-defaults(3) --
+=================
+
+## SYNOPSIS
+
+`require 'optparse-defaults'`
+Optparse-defaults.somthing(_parameter_)
+
+## DESCRIPTION
+
+Write your description here.
+
+## AUTHOR
+
+Matthew Todd, [matthewtodd](http://github.com/matthewtodd) on GitHub.
+
+## SEE ALSO
+
+ruby(1)

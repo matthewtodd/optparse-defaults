@@ -1,0 +1,19 @@
+--- 
+dependencies: 
+  shoe: 
+    group: 
+    - :development
+    version: ">= 0"
+specs: 
+- rake: 
+    version: 0.8.7
+- configuration: 
+    version: 1.1.0
+- launchy: 
+    version: 0.3.5
+- shoe: 
+    version: 0.6.2
+hash: 9448247cfd2eea97b8e36cf81899a3d8fb5d409f
+sources: 
+- Rubygems: 
+    uri: http://rubygems.org/
