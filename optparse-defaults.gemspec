@@ -8,11 +8,9 @@ Gem::Specification.new do |spec|
   spec.name    = 'optparse-defaults'
   spec.version = OptionParser::Defaults::VERSION
 
-  spec.summary = 'Optparse-defaults is one of my favorite things!'
+  spec.summary = "Default options for the stdlib's OptionParser"
   spec.description = <<-END.gsub(/^ */, '')
     #{spec.summary}
-
-    Further description here.
   END
 
   spec.author = 'Matthew Todd'
