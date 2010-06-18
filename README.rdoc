@@ -1,3 +1,17 @@
-= Optparse-defaults
+= OptionParser::Defaults
 
-Optparse-defaults is one of my favorite things! Let me tell you about it:
+Adds support for default options to the stdlib's OptionParser.
+
+Default options are parsed before any given command-line options, and they're
+also added to the bottom of the help message.
+
+== Usage
+
+  parser = OptionParser.with_defaults do |opts|
+             opts.defaults = %w(--foo --no-bar --baz=42)
+             # ... and so on ...
+           end
+
+  parser.order(ARGV)
+
+
