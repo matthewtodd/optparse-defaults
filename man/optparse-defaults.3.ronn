@@ -1,18 +1,32 @@
-optparse-defaults(3) --
-=================
+optparse-defaults(3) -- default options for Ruby's OptionParser
+===============================================================
 
 ## SYNOPSIS
 
-`require 'optparse-defaults'`
-Optparse-defaults.somthing(_parameter_)
+require 'optparse/defaults'  
+
+options = OptionParser.with_defaults do |opts|
+  opts.defaults = %w(--foo --no-bar)  
+end
+
+options.order(ARGV)
 
 ## DESCRIPTION
 
-Write your description here.
+`OptionParser.with_defaults()` extends Ruby's OptionParser with the ability to
+handle default options.
+
+These options are applied before any given command-line options, and they're
+also displayed at the bottom of the help text.
 
 ## AUTHOR
 
 Matthew Todd, [matthewtodd](http://github.com/matthewtodd) on GitHub.
+
+## BUGS
+
+For POSIX-correctness, it's important that you call `OptionParser#order`
+instead of `OptionParser#permute`.
 
 ## SEE ALSO
 

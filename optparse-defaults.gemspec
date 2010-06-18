@@ -18,9 +18,7 @@ Gem::Specification.new do |spec|
   spec.author = 'Matthew Todd'
   spec.email  = 'matthew.todd@gmail.com'
   spec.homepage = 'http://github.com/matthewtodd/optparse-defaults'
-
-  # spec.add_development_dependency 'ronn'
-  spec.require_bundler_dependencies
+  spec.add_bundler_dependencies
 
   # The kooky &File.method(:basename) trick keeps us from accidentally
   # shadowing a variable named "file" in the context that evaluates this

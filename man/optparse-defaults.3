@@ -1,0 +1,38 @@
+.\" generated with Ronn/v0.5
+.\" http://github.com/rtomayko/ronn/
+.
+.TH "OPTPARSE\-DEFAULTS" "3" "June 2010" "Matthew Todd" "RubyGems Manual"
+.
+.SH "NAME"
+\fBoptparse\-defaults\fR \-\- default options for Ruby's OptionParser
+.
+.SH "SYNOPSIS"
+require 'optparse/defaults'
+.
+.P
+options = OptionParser.with_defaults do |opts|
+  opts.defaults = %w(\-\-foo \-\-no\-bar)
+.
+.br
+end
+.
+.P
+options.order(ARGV)
+.
+.SH "DESCRIPTION"
+\fBOptionParser.with_defaults()\fR extends Ruby's OptionParser with the ability to
+handle default options.
+.
+.P
+These options are applied before any given command\-line options, and they're
+also displayed at the bottom of the help text.
+.
+.SH "AUTHOR"
+Matthew Todd, \fImatthewtodd\fR on GitHub.
+.
+.SH "BUGS"
+For POSIX\-correctness, it's important that you call \fBOptionParser#order\fR
+instead of \fBOptionParser#permute\fR.
+.
+.SH "SEE ALSO"
+ruby(1)
